@@ -61,8 +61,18 @@ icon_url = tg.url("/images/icons/%s.png" % icon)
            <div id="tab-content">
             ${w.children[0].display(args=w.args, kwds=w.kwds) | n}
           </div>
+          <div class="grid_25" id="other-app">
+<h3> &#9660; In other apps: </h3>
+	    <ul>
+    <li><a href=""><img src ="https://admin.fedoraproject.org/community/images/16_bodhi.png"/> Bodhi </a> </li>
+	    <li> <img src = "https://fedoraproject.org/static/images/icons/fedora-infra-icon_koji.png"/> Koji Builds </li>
+	    <li> <img src = "https://admin.fedoraproject.org/community/images/16_bugs.png"/> Bugzila </li>
+	    <li> <img src = "https://fedoraproject.org/static/images/icons/fedora-infra-icon_pkgdb.png"/> Pkgdb Package Info </li>
+	   </li>
+	</ul>
          </div>
-         <div class="clear"></div>
+         </div>
+	<div class="clear"> </div>
     </div>
 </div>
 <!-- END package chrome -->

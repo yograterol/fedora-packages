@@ -1660,6 +1660,7 @@ word-break: break-all; /* for IE and friends */
   border-radius: 5px;
   font-size: 1em;
   padding: 0.8em;
+  width: 750px;
 }
 
 .tab-container .tabs ul {
@@ -1750,6 +1751,8 @@ word-break: break-all; /* for IE and friends */
 #package-details #package-overview {
   color: #444;
   font-size: .85em;
+  width: 70%;
+  float: left;
 }
 
 #package-details #package-overview h3 {
@@ -1793,4 +1796,21 @@ table#active-releases td.release {
   font-weight: bold;
 }
 
+#other-app {
+  float: right;
+  width: 200px;
+}
 
+#other-app h3 {
+  color: #666;
+  font-size: 1em;
+  margin-bottom: .85em;
+  margin-top: 1em;
+}
+
+#other-app li {
+  list-style-type:none; 
+  padding: 0;
+  margin-left: 10px;
+  display inline;
+}
