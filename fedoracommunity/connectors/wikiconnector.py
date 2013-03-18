@@ -28,8 +28,8 @@ from datetime import datetime, timedelta
 from time import mktime
 from tg import config
 from shove import Shove
+from collections import defaultdict
 from fedoracommunity.connectors.api import IConnector, ICall, IQuery, ParamFilter
-from moksha.common.lib.helpers import defaultdict
 
 class WikiConnector(IConnector, IQuery):
     _method_paths = {}

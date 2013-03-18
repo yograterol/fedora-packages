@@ -23,8 +23,6 @@ This Connector works with the jsonconnector
 .. moduleauthor:: Seth Vidal <skvidal@fedoraproject.org>
 """
 
-from datetime import datetime, timedelta
-from moksha.common.lib.helpers import defaultdict
 from jsonconnector import SimpleJsonConnector
 from operator import itemgetter
 import logging
