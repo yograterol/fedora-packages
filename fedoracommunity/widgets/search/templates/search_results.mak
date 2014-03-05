@@ -13,9 +13,7 @@
       <tbody class="rowtemplate">
         <tr class="priority4">
             <td>
-                <span>
-                    <a href="${tg.url('/${link}')}">${'{{html name}}'}</a>
-                </span>
+                <span><a href="${tg.url('/${link}')}">${'{{html name}}'}</a></span>
             </td>
             <td>
                 ${'{{html summary}}'}
@@ -23,7 +21,9 @@
         </tr>
           <!-- {{each(index, pkg) sub_pkgs}} -->
           <tr class="subpackage">
-              <td><a href="${tg.url('/') + '${pkg[\'link\']}'}">${'{{html pkg["name"]}}'}</a></td>
+              <td>
+                  <span><a href="${tg.url('/') + '${pkg[\'link\']}'}">${'{{html pkg["name"]}}'}</a></span>
+              </td>
               <td>${'{{html pkg["summary"]}}'}</td>
           </tr>
           <!-- {{/each}} -->
@@ -40,8 +40,11 @@
 
        function ready_search() {
            var search_term = "${w.filters['search']}";
-           if (search_term)
+           if (search_term) {
+               search_term = encodeURIComponent(encodeURIComponent(search_term));
                moksha.defer(this, update_search_grid, [search_term]);
+           }
+
        }
    </script>
 </div>
